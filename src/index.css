@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/inter-v13-latin-300.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/inter-v13-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/inter-v13-latin-500.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/inter-v13-latin-600.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/inter-v13-latin-700.woff2') format('woff2'); 
+}
+
+:root {
+  --color: #1E1E21;
+  --color-1: #F5F3EF;
+  /* --body-bg: #F5F3EF; */
+  --font-bold: 700;
+  --font-regular: 500;
+  --font-semi: 600;
+  --bg-canvas: #1E1E21;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-color: var(--body-bg);
+  font-family: 'inter', sans-serif;
+  overflow-x: hidden;
+  user-select: none;
+  /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+
+a, p, span, h1, h2, h3{
+  color: var(--color);
+  margin: 0;
+  font-family: 'inter', sans-serif;
+  
+}
+
+.text-bold-20 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+

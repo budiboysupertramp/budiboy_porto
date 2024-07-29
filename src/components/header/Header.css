@@ -1,0 +1,10 @@
+.bx-title h1 {
+    /* font-size: 144px; */
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.bx-title span {
+    /* font-size: 32px; */
+    font-weight: 600;
+}

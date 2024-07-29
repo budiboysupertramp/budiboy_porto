@@ -1,0 +1,11 @@
+/* .container-navbar {
+    padding: 21px 60px;
+} */
+
+.btn-nav {
+    width: 106px;
+    height: 58px;
+    background-color: var(--bg-canvas);
+    color: var(--color-1);
+    border-radius: 500px;
+}
