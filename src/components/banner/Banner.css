@@ -1,0 +1,8 @@
+.container-banner  {
+    height: 100%;
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-image: url(../../assets/img//img-barista.png);
+    height: 60vh;
+}

@@ -1,6 +1,6 @@
-/* .container-navbar {
+.container-navbar {
     padding: 21px 60px;
-} */
+}
 
 .btn-nav {
     width: 106px;
@@ -9,3 +9,8 @@
     color: var(--color-1);
     border-radius: 500px;
 }
+
+/* .collapsd-nav ul li span {
+    font-size: 40px;
+    text-align: center;
+} */

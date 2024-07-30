@@ -4,6 +4,7 @@ import RahmaniImg from "../../assets/img/img-ra.png"
 import MunduImg from "../../assets/img/img-mn.png"
 import HastamaImg from "../../assets/img/img-he.png"
 import BanyumiliImg from "../../assets/img/img-bm.png"
+import {Link} from "react-router-dom";
 
 const Project = () => {
   return (
@@ -18,24 +19,31 @@ const Project = () => {
               <div className="content-project">
                 <h1>what have you done?</h1>
               </div>
-              <div className="content-project grid md:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
-                <figure>
-                  <img src={RahmaniImg} alt="" srcset="" />
+              <div className="content-project grid md:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+              <Link to = "https://konsultanlegalisasi.com/">
+              <figure>
+                  <img src={RahmaniImg} alt="rahmany agency" srcset="" />
                   <figcaption>Rahmaniny Agency</figcaption>
                 </figure>
+              </Link>
+              <Link to = "https://mundu1902.vercel.app/">
                 <figure>
-                  <img src={MunduImg} alt="" srcset="" />
+                  <img src={MunduImg} alt="kampung mundu" srcset="" />
                   <figcaption>Kampung Mundu</figcaption>
                 </figure>
+              </Link>
+              <Link to = "https://my-essence.vercel.app/">
                 <figure>
-                  <img src={HastamaImg} alt="" srcset="" />
+                  <img src={HastamaImg} alt="hastama essence" srcset="" />
                   <figcaption>hastama Esence</figcaption>
                 </figure>
+              </Link>
+              <Link to = "https://banyumily58.com">
                 <figure>
-                  <img src={BanyumiliImg} alt="" srcset="" />
+                  <img src={BanyumiliImg} alt="hastama essence" srcset="" />
                   <figcaption>Banymily 58</figcaption>
                 </figure>
-             
+              </Link>
               </div>
             </div>
         </div>

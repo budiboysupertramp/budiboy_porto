@@ -15,7 +15,8 @@
 }
 
 .container-project .bx-title {
-    border-bottom: 2px solid var(--color);;
+    border-bottom: 2px solid var(--color);
+    padding-bottom: 20px;
 }
 
 .content-project figure {

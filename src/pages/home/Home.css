@@ -3,7 +3,7 @@
     margin-top: 60px;
 }
 .column-home {
-    padding: 21px 60px;
+    padding: 0px 60px;
 }
 .row-content h2 {
     /* font-size: 88px; */
@@ -11,6 +11,12 @@
     line-height: 100%;
     flex: 1.2;
 }
+
+.ch-about .row-content {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color);
+}
+
 
 .row-content > .divider {
     height: 100%;
