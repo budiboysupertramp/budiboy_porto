@@ -48,6 +48,10 @@
   --bg-canvas: #1E1E21;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

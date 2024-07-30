@@ -1,10 +1,29 @@
+.container-header {
+   height: 100vh;
+}
+
 .bx-title h1 {
-    /* font-size: 144px; */
     font-weight: 600;
     line-height: 100%;
 }
 
 .bx-title span {
-    /* font-size: 32px; */
     font-weight: 600;
+}
+.bx-img-photo {
+    height: 100%;
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-image: url(../../assets/img/my-photo.png);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 650px) {
+    .container-header {
+        height: 50vh;
+     }
+     .bx-img-photo {
+        background-size: cover;
+        background-position: 66%;
+    }
 }

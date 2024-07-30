@@ -81,14 +81,15 @@ const Home = () => {
                   </article>
               </div>
             </section>
-            
           </div>
+
             <div className="">
               <Banner />
             </div>
-            <div className="">
+            <div className="column-home">
               <Project />
             </div>
+            
         </section>
     
     </>

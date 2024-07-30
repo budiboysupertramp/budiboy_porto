@@ -5,9 +5,8 @@ import BannerImg from '../../assets/img/img-banner.png';
 const Banner = () => {
   return (
     <>
-        <div className=" w-full flex">
+        <div className="container-banner w-full flex">
             <img src={BannerImg} alt="" srcset="" />
-
         </div>
     
     </>

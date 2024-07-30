@@ -1,0 +1,50 @@
+.container-project {
+  margin-top: 60px;
+}
+.container-project .bx-title span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: rgba(30, 30, 33, 0.7);
+}
+
+.content-project h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.container-project .bx-title {
+    border-bottom: 2px solid var(--color);;
+}
+
+.content-project figure {
+    position: relative;
+}
+
+figure img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(14, 14, 14, 0.8);
+    width: 100%;
+    padding: 30px 20px;
+    font-size: 32px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    visibility: hidden;
+    transition-duration: .5s;
+    opacity: 0;
+}
+
+figure:hover figcaption {
+    visibility: visible;
+    transition-duration: .5s;
+    opacity: 1;
+}

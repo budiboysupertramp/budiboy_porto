@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import Photo from '../../assets/img/my-photo.png'
+// import Photo from '../../assets/img/my-photo.png'
 
 const Header = () => {
   return (
@@ -14,7 +14,9 @@ const Header = () => {
             <span className="sm:text-2xl md:text-2xl lg:text-2xl">(Jakarta, Indonesia)</span>
             <span className="sm:text-xl md:text-2xl lg:text-2xl">Scroll Down</span>
           </div>
-          <img src={Photo} alt="My Photo" />
+          <div className="bx-img-photo w-full flex">
+           {/* <img src={Photo} alt="My Photo" className='my_photo' /> */}
+          </div>
         </div>
     </>
   )
