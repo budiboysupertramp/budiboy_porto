@@ -3,6 +3,13 @@
     background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-    background-image: url(../../assets/img//img-barista.png);
+    background-image: url(../../assets/img/img-sweater.png);
     height: 60vh;
+    background-position: 60%;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 650px) {
+    .container-banner  {
+        height: 20vh; 
+    }
 }

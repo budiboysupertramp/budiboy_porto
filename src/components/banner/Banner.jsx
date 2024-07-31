@@ -4,12 +4,12 @@ import './Banner.css'
 
 const Banner = () => {
   return (
-    <>
-        <div className="container-banner w-full flex mt-8">
+   
+        <div className="container-banner w-full flex mt-8 overflow-hidden">
             {/* <img src={BannerImg} alt="" srcset="" /> */}
         </div>
     
-    </>
+  
   )
 }
 

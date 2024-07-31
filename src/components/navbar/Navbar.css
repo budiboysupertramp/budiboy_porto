@@ -10,7 +10,14 @@
     border-radius: 500px;
 }
 
-/* .collapsd-nav ul li span {
-    font-size: 40px;
-    text-align: center;
+/* .collapse-nav {
+    transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    background-color: black;
 } */
+
+@media only screen and (min-width: 280px) and (max-width: 650px){
+    .container-navbar {
+        padding: 21px 20px;
+    }
+}

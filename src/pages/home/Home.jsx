@@ -16,7 +16,7 @@ useEffect (() => {
 
   return (
     <>
-        <section className="container-home w-full">
+        <section className="container-home w-full overflow-hidden">
           <div className="column-home w-ful flex flex-col">
             {/* <Navbar /> */}
             <Header />
@@ -24,10 +24,10 @@ useEffect (() => {
             <div className="row-content flex justify-between gap-5 sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
               <h2 className='md:text-7xl sm:text-3xl' data-aos="fade-down"  data-aos-duration="1000">
               As a digital designer, I focus on producing top-notch and impactful digital experiences.</h2>
-              <div className="divider"></div>
+              <div className="divider" data-aos="fade-up"  data-aos-duration="3000"></div>
               <div className="row-right flex flex-col gap-2">
-                <span className='md:text-2xl sm:text-2xl' data-aos="fade-down"  data-aos-duration="2000">(About Me)</span>
-                <div className="col-row-right flex gap-2" data-aos="fade-down"  data-aos-duration="2000">
+                <span className='md:text-2xl sm:text-2xl' data-aos="fade-left"  data-aos-duration="2000">(About Me)</span>
+                <div className="col-row-right flex gap-2" data-aos="fade-left"  data-aos-duration="2000">
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
@@ -92,7 +92,7 @@ useEffect (() => {
             <div className="">
               <Banner />
             </div>
-            <div className="column-home">
+            <div className="column-home overflow-hidden">
               <Project />
             </div>
             
