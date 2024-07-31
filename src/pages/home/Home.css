@@ -38,6 +38,12 @@
 
 .bx-experience {
     grid-template-columns: 1fr 1fr 2fr 2fr;
+} 
+
+.content-experience article{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
 
 .content-experience:first-child {
@@ -80,6 +86,8 @@
 .content-experience:nth-child(5){
     border-top: 2px solid var(--color);
 }
+
+
 
 @media only screen and (min-width: 280px) and (max-width: 650px) {
     .bx-experience {

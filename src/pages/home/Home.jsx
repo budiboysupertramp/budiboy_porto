@@ -21,13 +21,13 @@ useEffect (() => {
             {/* <Navbar /> */}
             <Header />
           <section className="ch-about w-full flex ">
-            <div className="row-content flex justify-between gap-5 sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
-              <h2 className='md:text-7xl sm:text-3xl' data-aos="fade-down"  data-aos-duration="1000">
+            <div className="row-content flex justify-between gap-3 sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
+              <h2 className='md:text-7xl sm:text-3xl'>
               As a digital designer, I focus on producing top-notch and impactful digital experiences.</h2>
               <div className="divider" data-aos="fade-up"  data-aos-duration="3000"></div>
               <div className="row-right flex flex-col gap-2">
-                <span className='md:text-2xl sm:text-2xl' data-aos="fade-left"  data-aos-duration="2000">(About Me)</span>
-                <div className="col-row-right flex gap-2" data-aos="fade-left"  data-aos-duration="2000">
+                <span className='md:text-2xl sm:text-2xl'>(About Me)</span>
+                <div className="col-row-right flex gap-2">
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
@@ -36,15 +36,13 @@ useEffect (() => {
             </div>
           </section>
 
-          <section className="bx-experience grid mt-8 ">
-              <div className="content-experience " data-aos="fade-down"  data-aos-duration="1000">
-                <article>
+          <section className="bx-experience grid mt-8 sm:gap-4 md:gap-0 ">
+              <div className="content-experience " data-aos="fade-right"  data-aos-duration="1000">
                   <h1>
                     (What I do)
                   </h1>
-                </article>
               </div>
-              <div className="content-experience " data-aos="fade-down"  data-aos-duration="900">
+              <div className="content-experience " data-aos="fade-left"  data-aos-duration="900">
                  <article className='' >
                   <h1>
                     UI Designer
@@ -55,7 +53,7 @@ useEffect (() => {
                   </p>
                  </article>
               </div>
-              <div className="content-experience " data-aos="fade-down"  data-aos-duration="1000">
+              <div className="content-experience " data-aos="fade-right"  data-aos-duration="1000">
                  <article className='' >
                   <h1>
                     Web Designer
@@ -66,7 +64,7 @@ useEffect (() => {
                     </p>
                  </article>
               </div>
-              <div className="content-experience " data-aos="fade-down"  data-aos-duration="2000">
+              <div className="content-experience " data-aos="fade-left"  data-aos-duration="2000">
                   <article>
                     <h1>
                     UX Designer
@@ -76,7 +74,7 @@ useEffect (() => {
                     </p>
                   </article>
               </div>
-              <div className="content-experience " data-aos="fade-down"  data-aos-duration="3000">
+              <div className="content-experience " data-aos="fade-right"  data-aos-duration="2500">
                   <article>
                     <h1>
                     Responsive design

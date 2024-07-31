@@ -1,11 +1,11 @@
 .container-navbar {
-    padding: 21px 60px;
+    padding: 10px 60px;
 }
 
 .btn-nav {
     width: 106px;
     height: 58px;
-    background-color: var(--bg-canvas);
+    /* background-color: var(--bg-canvas); */
     color: var(--color-1);
     border-radius: 500px;
 }
@@ -18,6 +18,12 @@
 
 @media only screen and (min-width: 280px) and (max-width: 650px){
     .container-navbar {
-        padding: 21px 20px;
+        padding: 10px 20px 0px 20px;
     }
+    .btn-nav {
+        width: 87px;
+        height: 43px;
+        
+    }
+
 }

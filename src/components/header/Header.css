@@ -25,5 +25,6 @@
      .bx-img-photo {
         background-size: cover;
         background-position: 66%;
+        background-attachment: local;
     }
 }
