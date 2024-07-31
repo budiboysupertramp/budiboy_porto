@@ -1,29 +1,105 @@
 .container-navbar {
-    padding: 10px 60px;
+  padding: 10px 60px;
 }
 
 .btn-nav {
-    width: 106px;
-    height: 58px;
-    /* background-color: var(--bg-canvas); */
-    color: var(--color-1);
-    border-radius: 500px;
+  width: 106px;
+  height: 58px;
+  /* background-color: var(--bg-canvas); */
+  color: var(--color-1);
+  border-radius: 500px;
 }
 
-/* .collapse-nav {
-    transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    background-color: black;
+/* .container-navbar.active .btn-nav {
+  background-color: #2c3e50;
+  transition: background-color 0.3s ease-in-out;
 } */
 
-@media only screen and (min-width: 280px) and (max-width: 650px){
-    .container-navbar {
-        padding: 10px 20px 0px 20px;
-    }
-    .btn-nav {
-        width: 87px;
-        height: 43px;
-        
-    }
+.collapse-nav {
+  /* background-color: red; */
+  /* transition-duration: .5s; */
+}
 
+.custom-bg-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  z-index: 5;
+}
+
+.bg-mobile1,
+.bg-mobile2,
+.bg-mobile3,
+.bg-mobile4,
+.bg-mobile5 {
+  flex: 1;
+  height: 100vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+nav.active .bg-mobile1 {
+  transform: translateY(100%);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+
+nav.active .bg-mobile2 {
+  transform: translateY(100%);
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+nav.active .bg-mobile3 {
+  transform: translateY(100%);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+nav.active .bg-mobile4 {
+  transform: translateY(100%);
+  transition-delay: 0.3s;
+  transition-duration: 0.5s;
+}
+nav.active .bg-mobile5 {
+  transform: translateY(100%);
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.bg-mobile1 {
+  background-color: rgb(38, 39, 39);
+  transform: translateY(-20%);
+  transition-duration: 0.5s;
+}
+
+.bg-mobile2 {
+  background-color: rgb(38, 39, 39);
+  transform: translateY(-10%);
+  transition-duration: 0.5s;
+}
+
+.bg-mobile3 {
+  background-color: rgb(38, 39, 39);
+  transform: translateY(-70%);
+  transition-duration: 0.6s;
+}
+.bg-mobile4 {
+  background-color: rgb(38, 39, 39);
+  transform: translateY(-40%);
+  transition-duration: 0.6s;
+}
+.bg-mobile5 {
+  background-color: rgb(38, 39, 39);
+  transform: translateY(-50%);
+  transition-duration: 1s;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 650px) {
+  .container-navbar {
+    padding: 10px 20px 0px 20px;
+  }
+  .btn-nav {
+    width: 87px;
+    height: 43px;
+  }
 }
