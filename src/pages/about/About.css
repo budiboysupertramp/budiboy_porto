@@ -1,7 +1,46 @@
-@media only screen and (min-width: 280px) and (max-width: 650px) {
+.page-about {
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.bx-about-page {
+    padding: 0 20px;
+}
+
+.col-head h1 {
+    line-height: 90%;
+}
+
+.bx-desc {
+  max-width: 91%;
+}
+
+.divider-hor {
+    border: 1px solid var(--color);
+    width: 100%;
+}
+
+.col-cv .col-cv-title {
+  font-weight: 600;
+}
+
+.col-cv .col-cv-work {
+  font-weight: 500;
+}
+
+.col-cv .col-cv-date {
+  /* font-size: 16px; */
+  font-weight: 500;
+  color: #3c3c3f;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
     .page-about img {
-        height: 30vh;
+        height: 45vh;
         position: relative;
+        top: -10px;
+    }
+
+    .page-about {
+        grid-template-columns: 1fr !important;
     }
 }
-  

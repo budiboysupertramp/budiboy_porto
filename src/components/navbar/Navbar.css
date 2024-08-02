@@ -1,5 +1,5 @@
 .container-navbar {
-  padding: 10px 60px;
+  padding: 0px 60px;
 }
 
 .btn-nav {
@@ -8,6 +8,8 @@
   /* background-color: var(--bg-canvas); */
   color: var(--color-1);
   border-radius: 500px;
+  position: absolute;
+  top: 20px;
 }
 
 /* .container-navbar.active .btn-nav {

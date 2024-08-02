@@ -1,5 +1,6 @@
 .container-header {
    height: 100vh;
+   margin-top: 60px;
 }
 
 .bx-title h1 {
@@ -21,6 +22,7 @@
 @media only screen and (min-width: 280px) and (max-width: 650px) {
     .container-header {
         height: 50vh;
+        margin-top: 40px;
      }
      .bx-img-photo {
         background-size: cover;

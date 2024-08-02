@@ -22,7 +22,7 @@ useEffect (() => {
             <Header />
           <section className="ch-about w-full flex ">
             <div className="row-content flex justify-between gap-3 sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
-              <h2 className='md:text-7xl sm:text-3xl'>
+              <h2 className='md:text-7xl sm:text-3xl '>
               As a digital designer, I focus on producing top-notch and impactful digital experiences.</h2>
               <div className="divider" data-aos="fade-up"  data-aos-duration="3000"></div>
               <div className="row-right flex flex-col gap-2">
@@ -38,13 +38,13 @@ useEffect (() => {
 
           <section className="bx-experience grid mt-8 sm:gap-4 md:gap-0 ">
               <div className="content-experience " data-aos="fade-right"  data-aos-duration="1000">
-                  <h1>
+                  <h1 className='sm:text-3xl md:text-3xl'>
                     (What I do)
                   </h1>
               </div>
               <div className="content-experience " data-aos="fade-left"  data-aos-duration="900">
-                 <article className='' >
-                  <h1>
+                 <article className='md:text-left sm:text-justify' >
+                  <h1 className='sm:text-2xl md:text-3xl'>
                     UI Designer
                   </h1>
                   <p>
@@ -54,8 +54,8 @@ useEffect (() => {
                  </article>
               </div>
               <div className="content-experience " data-aos="fade-right"  data-aos-duration="1000">
-                 <article className='' >
-                  <h1>
+                 <article className='md:text-left sm:text-justify' >
+                  <h1 className='sm:text-2xl md:text-3xl'>
                     Web Designer
                     </h1>
                     <p>
@@ -65,8 +65,8 @@ useEffect (() => {
                  </article>
               </div>
               <div className="content-experience " data-aos="fade-left"  data-aos-duration="2000">
-                  <article>
-                    <h1>
+                  <article className='md:text-left sm:text-justify'>
+                    <h1 className='sm:text-2xl md:text-3xl'>
                     UX Designer
                     </h1>
                     <p>
@@ -75,8 +75,8 @@ useEffect (() => {
                   </article>
               </div>
               <div className="content-experience " data-aos="fade-right"  data-aos-duration="2500">
-                  <article>
-                    <h1>
+                  <article className='md:text-left sm:text-justify'>
+                    <h1 className='sm:text-2xl md:text-3xl'>
                     Responsive design
                     </h1>
                     <p>

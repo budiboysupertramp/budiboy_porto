@@ -22,7 +22,7 @@ const Project = () => {
         <div className="container-project w-full flex-col flex gap-8 overflow-hidden">
             <div className="bx-title grid md:grid-cols-2 gap-4 sm:grid-cols-1 items-center">
                 <h1 className='sm:text-3xl md:text-5xl xl:text-9xl fw-bold' data-aos="fade-down"  data-aos-duration="1000">MY Project</h1>
-                <span data-aos="fade-right"  data-aos-duration="3000">A cutting-edge digital platform designed to revolutionize the way people
+                <span className = "md:text-left sm:text-justify" data-aos="fade-right"  data-aos-duration="3000">A cutting-edge digital platform designed to revolutionize the way people
                 interact with technology.</span>
             </div>
             <div className="bx-project w full grid lg:grid-flow-col gap-5 lg:auto-cols-auto">
