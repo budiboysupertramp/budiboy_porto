@@ -70,7 +70,7 @@ const About = () => {
                 <div className="bx-content-cv w-full">
                   <h1 className="md:text-7xl sm:text-3xl font-bold">Skills</h1>
                   <div className="w-full flex flex-col gap-5 md:mt-4 sm:mt-3">
-                    <div  className="col-cv w-full md:pl-7 sm:pl-0 grid md:grid-cols-4 sm:grid-cols-2 gap-2" >
+                    <div  className="col-cv w-full md:pl-7 sm:pl-4 grid md:grid-cols-4 sm:grid-cols-2 gap-2" >
                     {DataHelper && budiSkill.map((skill, index)=> (
                         <p key = {index} className="col-cv-work sm:text-lg md:text-xl list-item">{skill.title}</p>
                     ))}
