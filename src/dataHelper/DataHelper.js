@@ -47,8 +47,38 @@ export const budiSchool = [
 
 export const budiSkill = [
   {
-    title : "UI Interface, Html, Css, Javascript, Jquery, React JS, Tailwind, Figma, Linux, Crimping, Latte Art",
-  }
+    title : "UI Interface",
+  },
+  {
+    title : "Html",
+  },
+  {
+    title : "Css",
+  },
+  {
+    title : "Javascript",
+  },
+  {
+    title : "Jquery",
+  },
+  {
+    title : "React JS",
+  },
+  {
+    title : "Tailwind",
+  },
+  {
+    title : "Figma",
+  },
+  {
+    title : "Linux",
+  },
+  {
+    title : "Crimping",
+  },
+  {
+    title: "Latte Art",
+  },
 ]
 
 export const organization = [
