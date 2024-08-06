@@ -85,7 +85,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={clickMenu}>
+              <NavLink to="About" onClick={clickMenu}>
                 <span className='text-slate-100 sm:text-6xl md:text-6xl xl:text-9xl fw-bold uppercase'>About</span>
               </NavLink>
             </li>
