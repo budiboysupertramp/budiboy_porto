@@ -5,6 +5,8 @@ import Header from '../../components/header/Header';
 import Banner from "../../components/banner/Banner";
 import Project from "../../components/project/Project";
 import Instagram from '../../assets/img/img-ig.png';
+import Linkind from "../../assets/img/img-linkind.png";
+import Twitter from "../../assets/img/img-twitter.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -29,8 +31,8 @@ useEffect (() => {
                 <span className='md:text-2xl sm:text-2xl'>(About Me)</span>
                 <div className="col-row-right flex gap-2">
                   <img src={Instagram} alt="instagram" srcset="" className=''/>
-                  <img src={Instagram} alt="instagram" srcset="" className=''/>
-                  <img src={Instagram} alt="instagram" srcset="" className=''/>
+                  <img src={Twitter} alt="twitter" srcset="" className=''/>
+                  <img src={Linkind} alt="linkind" srcset="" className=''/>
                 </div>
               </div>
             </div>
@@ -93,7 +95,6 @@ useEffect (() => {
             <div className="column-home overflow-hidden">
               <Project />
             </div>
-            
         </section>
     
     </>
