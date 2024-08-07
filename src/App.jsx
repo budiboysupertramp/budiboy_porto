@@ -36,7 +36,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Navigate to="/home" />} /> */}
         <Route path="/about" element={<About />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
       <Footer />
 
