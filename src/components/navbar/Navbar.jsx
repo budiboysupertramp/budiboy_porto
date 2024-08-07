@@ -54,7 +54,7 @@
 
 import React, { useState } from 'react';
 import './Navbar.css';
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -85,13 +85,15 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="About" onClick={clickMenu}>
+              <NavLink to="/about" onClick={clickMenu}>
                 <span className='text-slate-100 sm:text-6xl md:text-6xl xl:text-9xl fw-bold uppercase'>About</span>
               </NavLink>
             </li>
           </ul>
         </div>
       </nav>
+
+      <Outlet />
     </>
   );
 };
