@@ -9,9 +9,9 @@ const override = {
 
 const Loading = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div className='w-full h-screen flex justify-center items-center bg-neutral-900'>
       <ClipLoader
-        color={"#000000"}
+        color={"#fff"}
         loading={true}
         cssOverride={override}
         size={20}
