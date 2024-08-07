@@ -54,7 +54,7 @@
 
 import React, { useState } from 'react';
 import './Navbar.css';
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -92,8 +92,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-
-      <Outlet />
     </>
   );
 };
