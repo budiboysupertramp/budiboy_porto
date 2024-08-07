@@ -80,12 +80,12 @@ const Navbar = () => {
           </div>
           <ul className='flex gap-8 flex-col z-30'>
             <li className='text-center'>
-              <NavLink to="/Home" onClick={clickMenu}>
+              <NavLink to="/" onClick={clickMenu}>
                 <span className='text-slate-100 sm:text-6xl md:text-6xl xl:text-9xl fw-bold uppercase'>Home</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/About" onClick={clickMenu}>
+              <NavLink to="/about" onClick={clickMenu}>
                 <span className='text-slate-100 sm:text-6xl md:text-6xl xl:text-9xl fw-bold uppercase'>About</span>
               </NavLink>
             </li>
