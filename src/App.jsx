@@ -20,7 +20,8 @@
 
 // export default App;
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "../src/pages/home/Home";
 import About from "../src/pages/about/About";
 import Navbar from "../src/components/navbar/Navbar";
@@ -30,7 +31,8 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
     <ScrollToTop>
       <Navbar />
       <Routes>
@@ -43,7 +45,8 @@ function App() {
       <Footer />
 
     </ScrollToTop>
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
   );
 }
 
