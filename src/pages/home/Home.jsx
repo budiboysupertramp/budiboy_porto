@@ -7,6 +7,7 @@ import Project from "../../components/project/Project";
 import Instagram from '../../assets/img/img-ig.png';
 import Linkind from "../../assets/img/img-linkind.png";
 import Twitter from "../../assets/img/img-twitter.png";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,9 +31,18 @@ useEffect (() => {
               <div className="row-right flex flex-col gap-2">
                 <span className='md:text-2xl sm:text-2xl'>(About Me)</span>
                 <div className="col-row-right flex gap-2">
-                  <img src={Instagram} alt="instagram" srcset="" className=''/>
-                  <img src={Twitter} alt="twitter" srcset="" className=''/>
-                  <img src={Linkind} alt="linkind" srcset="" className=''/>
+
+                  <Link to = "https://www.instagram.com/budiboy_supertramp/">
+                    <img src={Instagram} alt="instagram" srcset="" className=''/>
+                  </Link>
+
+                  <Link>
+                    <img src={Twitter} alt="twitter" srcset="" className=''/>
+                  </Link>
+
+                  <Link  to= "https://linkedin.com/in/setia-budi-345549232">
+                    <img src={Linkind} alt="linkind" srcset="" className=''/>
+                  </Link>
                 </div>
               </div>
             </div>
