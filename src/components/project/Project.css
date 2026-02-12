@@ -19,6 +19,10 @@
     border-bottom: 2px solid var(--color);
     padding-bottom: 20px;
 }
+.dark .container-project .bx-title {
+    border-bottom: 2px solid var(--color-1);
+    padding-bottom: 20px;
+}
 
 .content-project figure {
     position: relative;

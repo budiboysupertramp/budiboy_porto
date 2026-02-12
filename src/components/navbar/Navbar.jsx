@@ -58,6 +58,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+    const [isDark, setDark] = useState(false)
+
 
   const clickMenu = () => {
     setClick(!click);
@@ -66,10 +68,11 @@ const Navbar = () => {
   return (
     <>
       <nav className={`container-navbar w-full flex justify-end sticky top-0 z-10 ${click ? 'active' : ''}`}>
-        <button className={`btn-nav text-bold-20 ${click ? 'bg-slate-700' : 'bg-slate-900'}`} onClick={clickMenu}>
+        <button className={`btn-nav text-bold-20 `} onClick={clickMenu}>
           Menu
         </button>
         <div className={`collapse-nav bg-slate-950 absolute w-full flex flex-col justify-center top-0 left-0 right-0 h-screen z-30 overflow-hidden items-center ${click ? 'visible' : 'invisible'}`}>
+          
           <span className='text-slate-100 sm:text-3xl md:text-5xl xl:text-9xl absolute top-7 right-7 cursor-pointer z-30' onClick={clickMenu}>X</span>
           <div className="custom-bg-nav">
               <div className="bg-mobile1"></div>

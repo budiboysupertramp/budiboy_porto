@@ -76,12 +76,30 @@ body {
 }
 
 
+.dark body {
+  background-color: var(--color);
+}
+
+
 a, p, span, h1, h2, h3{
   color: var(--color);
   margin: 0;
-  font-family: 'inter', sans-serif;
+ 
   
 }
+.dark a,
+.dark p,
+.dark span,
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: var(--color-1);
+}
+
+.dark section {
+  background-color: var(--bg-canvas);
+}
+
 
 .text-bold-20 {
   font-weight: 600;

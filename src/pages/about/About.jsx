@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./About.css";
 import Me from "../../assets/img/belakang.jpg";
+// import Me from "../../assets/img/budiboy2.png";
 import Stepper from "@keyvaluesystems/react-stepper";
 import DataHelper, { articleAbout, resume, budiSchool, budiSkill, organization } from "../../dataHelper/DataHelper";
 // import { initialStepsArr } from "../../dataHelper/DataHelper";
 import { Lenis } from 'lenis/react';
 
 
-const About = () => {
+const About = ({isDark}) => {
   return (
     <>
       <Lenis
@@ -25,7 +26,6 @@ const About = () => {
           <img
             src={Me}
             alt=""
-            srcset=""
             className="sticky overflow-hidden h-screen top-0 w-screen"
           />
           <div className="bx-about-page overflow-auto w-full flex flex-col md:pt-10 sm:pt-2">
@@ -50,7 +50,7 @@ const About = () => {
                       </article>
                     ))}
 
-                <div className="divider-hor"></div>
+                <div className= {`${isDark === 'dark' ? "border border-[#fff]" : "divider-hor"}`}></div>
               </div>
 
               <div className="bx-cv">
@@ -62,7 +62,7 @@ const About = () => {
                         <div key={index} className="col-cv w-full md:pl-7 sm:pl-0" >
                           <p className="col-cv-title sm:text-xl md:text-2xl">{work.title}</p>
                           <p className="col-cv-work sm:text-lg md:text-xl">{work.name}</p>
-                          <p className="col-cv-date sm:text-base">{work.date}</p>
+                          <p className= {` sm:text-base ${isDark === "dark" ? "!text-[#b4b4b4]": ""}`}>{work.date}</p>
                         </div>
                       ))}
                     </div>
@@ -74,7 +74,7 @@ const About = () => {
                       {DataHelper && budiSchool.map((sch, index) => (
                         <div key={index} className="col-cv w-full md:pl-7 sm:pl-0" >
                           <p className="col-cv-title sm:text-xl md:text-2xl">{sch.title}</p>
-                          <p className="col-cv-date sm:text-base">{sch.date}</p>
+                          <p className= {` sm:text-base ${isDark === "dark" ? "!text-[#b4b4b4]": ""}`}>{sch.date}</p>
                         </div>
                       ))}
                     </div>
@@ -98,7 +98,7 @@ const About = () => {
                       {DataHelper && organization.map((org, index) => (
                         <div key={index} className="col-cv w-full md:pl-7 sm:pl-0" >
                           <p className="col-cv-title sm:text-xl md:text-2xl">{org.title}</p>
-                          <p className="col-cv-date sm:text-base">{org.date}</p>
+                          <p className= {` sm:text-base ${isDark === "dark" ? "!text-[#b4b4b4]": ""}`}>{org.date}</p>
                         </div>
                       ))}
                     </div>

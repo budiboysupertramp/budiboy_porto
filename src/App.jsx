@@ -9,8 +9,11 @@ import ScrollToTop from "./dataHelper/ScrollToTop";
 import Spiner from "../src/components/loading/Loading";
 import './App.css';
 
+import ButtonDarkMode from './components/buttonDarkMode/ButtonDarkMode';
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,26 +21,52 @@ function App() {
     }, 3000);
   }, []);
 
+
+
+  // darkmode
+  const [isDark, setDark] = useState(() => {
+    return localStorage.getItem('app-theme') || 'light'
+  })
+
+  useEffect(() => {
+    localStorage.setItem('app-theme', isDark)
+
+    if (isDark === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [isDark])
+
+  const toggleDarkMode = () => {
+    setDark((prev) => (prev === 'light' ? 'dark' : 'light'))
+  }
+  // darkmode
+
   if (isLoading) {
     return <Spiner />;
   }
 
+
+
   return (
     <BrowserRouter>
-    {/* <HashRouter> */}
-    <ScrollToTop>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} /> */}
-      </Routes>
-      <Footer />
+      {/* <HashRouter> */}
+      <ScrollToTop>
+        <ButtonDarkMode
+          toggleDarkMode={toggleDarkMode}
+          isDark={isDark}
+        />
 
-    </ScrollToTop>
-    {/* </HashRouter> */}
+        <Navbar isDark={isDark}/>
+        <Routes>
+          <Route path="/" element={<Home isDark={isDark} />} />
+          <Route path="/about" element={<About isDark={isDark}/>} />
+        </Routes>
+        <Footer />
+
+      </ScrollToTop>
+      {/* </HashRouter> */}
     </BrowserRouter>
   );
 }

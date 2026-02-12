@@ -4,16 +4,16 @@ import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
 import Banner from "../../components/banner/Banner";
 import Project from "../../components/project/Project";
-import Instagram from '../../assets/img/img-ig.png';
-import Linkind from "../../assets/img/img-linkind.png";
-import Twitter from "../../assets/img/img-twitter.png";
+import Instagram from '../../assets/icon/instagram.svg';
+import Linkind from "../../assets/icon/linkedin.svg";
+import Twitter from "../../assets/icon/twitter.svg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Lenis } from 'lenis/react';
 
-const Home = () => {
+const Home = ({isDark}) => {
   useEffect(() => {
     AOS.init();
   })
@@ -37,7 +37,7 @@ const Home = () => {
             {/* <Navbar /> */}
             <Header />
             <section className="ch-about w-full flex ">
-              <div className="row-content flex justify-between gap-3 sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
+              <div className= {`row-content flex justify-between gap-3 sm:flex-col-reverse md:flex-col-reverse lg:flex-row`}>
                 <h2 className='md:text-7xl sm:text-3xl '>
                   As a digital designer, I focus on producing top-notch and impactful digital experiences.</h2>
                 <div className="divider" data-aos="fade-up" data-aos-duration="3000"></div>
@@ -46,15 +46,15 @@ const Home = () => {
                   <div className="col-row-right flex gap-2">
 
                     <Link to="https://www.instagram.com/budiboy_supertramp/">
-                      <img src={Instagram} alt="instagram" srcset="" className='' />
+                      <img src={Instagram} alt="instagram" className='w-[50px] h-[50px]' />
                     </Link>
 
                     <Link>
-                      <img src={Twitter} alt="twitter" srcset="" className='' />
+                      <img src={Twitter} alt="twitter" className='w-[50px] h-[50px]' />
                     </Link>
 
                     <Link to="https://linkedin.com/in/setia-budi-345549232">
-                      <img src={Linkind} alt="linkind" srcset="" className='' />
+                      <img src={Linkind} alt="linkind"  className='w-[50px] h-[50px]' />
                     </Link>
                   </div>
                 </div>
@@ -62,17 +62,17 @@ const Home = () => {
             </section>
 
             <section className="bx-experience grid mt-8 sm:gap-4 md:gap-0 "  data-aos="fade-up" data-aos-duration="3000">
-              <div className="content-experience " >
+              <div className={`content-experience`} >
                 <h1 className='sm:text-3xl md:text-3xl'>
                   (What I do)
                 </h1>
               </div>
-              <div className="content-experience ">
+              <div className = {`content-experience`}>
                 <article className='md:text-left sm:text-justify' >
                   <h1 className='sm:text-2xl md:text-3xl'>
                     UI Designer
                   </h1>
-                  <p>
+                  <p className= {`${isDark === "dark" ? "!text-[#b4b4b4]" : ""}`}>
                     Design dashboards and user interfaces of information systems for industrial and institutional use.
                     government.
                   </p>
@@ -83,7 +83,7 @@ const Home = () => {
                   <h1 className='sm:text-2xl md:text-3xl'>
                     Web Designer
                   </h1>
-                  <p>
+                  <p className= {`${isDark === "dark" ? "!text-[#b4b4b4]" : ""}`}>
                     Transformed comprehensive layouts into well-functioning web and mobile screen displays
                     using HTML, CSS, JavaScript, Jquery libraries.
                   </p>
@@ -94,7 +94,7 @@ const Home = () => {
                   <h1 className='sm:text-2xl md:text-3xl'>
                     UX Designer
                   </h1>
-                  <p>
+                  <p className= {`${isDark === "dark" ? "!text-[#b4b4b4]" : ""}`}>
                     Work closely with developers, project managers, in the design, implementation and handover process.
                   </p>
                 </article>
@@ -104,7 +104,7 @@ const Home = () => {
                   <h1 className='sm:text-2xl md:text-3xl'>
                     Responsive design
                   </h1>
-                  <p>
+                  <p className= {`${isDark === "dark" ? "!text-[#b4b4b4]" : ""}`}>
                     provides comfort to users in using the service
                   </p>
                 </article>
