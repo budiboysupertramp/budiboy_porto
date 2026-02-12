@@ -16,6 +16,7 @@ const About = () => {
           duration: 1.6,
           smoothWheel: true,
           smoothTouch: true,
+          syncTouch: true,
           easing: (t) => 1 - Math.pow(1 - t, 3),
 
         }}
