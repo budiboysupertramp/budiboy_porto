@@ -33,7 +33,7 @@ const Project = ({isDark}) => {
               <Link to = "https://konsultanlegalisasi.com/">
               <figure className= {`border overflow-hidden rounded-[4px]  ${isDark === 'dark' ? ' overflow-hidden-black ' : "border-[#bebdbd]"}`}>
                   <img src={RahmaniImg} alt="rahmany agency" />
-                  <figcaption>Rahmaniny Agency</figcaption>
+                  <figcaption>Rahmani Agency</figcaption>
                 </figure>
               </Link>
               <Link to = "https://mundu1902.vercel.app/">
@@ -51,7 +51,7 @@ const Project = ({isDark}) => {
               <Link to = "https://banyumily58.com">
                 <figure className= {`border overflow-hidden rounded-[4px]  ${isDark === 'dark' ? 'border-black ' : "border-[#bebdbd]"}`}>
                   <img src={BanyumiliImg} alt="hastama essence" />
-                  <figcaption>Banymily 58</figcaption>
+                  <figcaption>Banyumily 58</figcaption>
                 </figure>
               </Link>
               </div>
