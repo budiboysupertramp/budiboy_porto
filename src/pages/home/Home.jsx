@@ -61,13 +61,13 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="bx-experience grid mt-8 sm:gap-4 md:gap-0 ">
-              <div className="content-experience " data-aos="fade-right" data-aos-duration="1000">
+            <section className="bx-experience grid mt-8 sm:gap-4 md:gap-0 "  data-aos="fade-up" data-aos-duration="3000">
+              <div className="content-experience " >
                 <h1 className='sm:text-3xl md:text-3xl'>
                   (What I do)
                 </h1>
               </div>
-              <div className="content-experience " data-aos="fade-left" data-aos-duration="900">
+              <div className="content-experience ">
                 <article className='md:text-left sm:text-justify' >
                   <h1 className='sm:text-2xl md:text-3xl'>
                     UI Designer
@@ -78,7 +78,7 @@ const Home = () => {
                   </p>
                 </article>
               </div>
-              <div className="content-experience " data-aos="fade-right" data-aos-duration="1000">
+              <div className="content-experience ">
                 <article className='md:text-left sm:text-justify' >
                   <h1 className='sm:text-2xl md:text-3xl'>
                     Web Designer
@@ -89,7 +89,7 @@ const Home = () => {
                   </p>
                 </article>
               </div>
-              <div className="content-experience " data-aos="fade-left" data-aos-duration="2000">
+              <div className="content-experience ">
                 <article className='md:text-left sm:text-justify'>
                   <h1 className='sm:text-2xl md:text-3xl'>
                     UX Designer
@@ -99,7 +99,7 @@ const Home = () => {
                   </p>
                 </article>
               </div>
-              <div className="content-experience " data-aos="fade-right" data-aos-duration="2500">
+              <div className="content-experience ">
                 <article className='md:text-left sm:text-justify'>
                   <h1 className='sm:text-2xl md:text-3xl'>
                     Responsive design
