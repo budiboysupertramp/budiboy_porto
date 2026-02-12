@@ -13,6 +13,7 @@
     "@keyvaluesystems/react-stepper": "^1.0.4",
     "@keyvaluesystems/react-vertical-stepper": "^0.1.6",
     "aos": "^2.3.4",
+    "lenis": "^1.3.17",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.3.1",
